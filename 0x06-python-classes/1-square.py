@@ -7,7 +7,12 @@
 
 
 class Square:
-    """a class named square"""
+    """Represent a square."""
     def __int__(self, size):
-        """initializing the object"""
+        """__init__
+        The __int__method initializes the size value
+        of  the square.
+        Attritbues:
+            size (int): The size of the square.
+            """
         self.__size = size
