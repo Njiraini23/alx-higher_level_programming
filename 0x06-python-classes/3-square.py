@@ -4,7 +4,7 @@
 
 class Square:
     """
-    class defined with private 
+    class defined with private
     instance attritbute: size
     """
     def __init__(self, size=0):
