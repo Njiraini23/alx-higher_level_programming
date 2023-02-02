@@ -1,19 +1,28 @@
 #!/usr/bin/python3
-Square = __import__('3-square').Square
+"""defining a class named square"""
 
-my_square_1 = Square(3)
-print("Area: {}".format(my_square_1.area()))
 
-try:
-    print(my_square_1.size)
-except Exception as e:
-    print(e)
+class Square:
+    """
+    class defined with a private
+    instance attribute: size
+    """
+    def __init__(self, size=0):
+        """
+        Args:
+            size: size of square
+        """
+        if type(size) is int:
+            if size < 0:
+                raise ValueError("size must be >= 0")
+            else:
+                self.__size = size
+        else:
+            raise TypeError("size must be an integer")
 
-try:
-    print(my_square_1.__size)
-except Exception as e:
-    print(e)
-
-my_square_2 = Square(5)
-print("Area: {}".format(my_square_2.area()))
-
+    def area(self):
+        """
+        finds area of square
+        Returns: area of the square
+        """
+        return self.__size ** 2
