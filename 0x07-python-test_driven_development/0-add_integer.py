@@ -1,9 +1,15 @@
 #!/usr/bin/python
-"""Module "0-add_integer" that adds two integers (a, b)"""
+"""A module to add two numbers
+
+This module performs the additionoperation between two numbers,
+these numbers can be integers or floats.
+
+"""
 
 
 def add_integer(a, b=98):
-    """ Return sum of two numbers."""
+    """ Returns the integer addition of a and b
+    """
     if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
     if type(b) is not int and type(b) is not float:
