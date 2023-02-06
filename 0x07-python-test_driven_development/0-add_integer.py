@@ -1,14 +1,13 @@
-#!/usr/bin/python
-"""A module to add two numbers
+#!/usr/bin/python3
 
-This module performs the additionoperation between two numbers,
+"""" A module to add two numbers
+This module performs the addition operation between two numbers,
 these numbers can be integers or floats.
-
 """
 
 
 def add_integer(a, b=98):
-    """ Returns the integer addition of a and b
+    """Returns the integer addition of a and b
     """
     if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
