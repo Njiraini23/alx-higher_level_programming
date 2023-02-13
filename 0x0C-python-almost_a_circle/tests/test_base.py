@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-# test_base.py
-# Oscar Bedat <3961@holbertonschool.com>
+
 """Defines unittests for base.py."""
 import unittest
 import os
