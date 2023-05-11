@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Takes the URL in an email, sends a POST rquest to the URL 
+"""Takes the URL in an email, sends a POST rquest to the URL
 with the email as paramtr. Displays the body of the response
 coded in utf-8)
 Uses the package urllib and sys
