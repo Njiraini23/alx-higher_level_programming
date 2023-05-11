@@ -5,16 +5,16 @@ coded in utf-8)
 Uses the package urllib and sys
 email sent with email variable and must use with statement
 """
-import sys
-import urllib.parse
+from sys import argv
 import urllib.request
+from urllib.parse import urlencode
 
 
-if __name__ == "__main__":
-    url = sys.argv[1]
-    value = {"email": sys.argv[2]}
-    data = urllib.parse.urlencode(value).encode("ascii")
-
-    request = urllib.request.Request(url, data)
+if __name__ == '__main__':
+    url = argv[1]
+    value = {'email': argv[2]}
+    email = urlencode(value).encode('ascii')
+    request = urllib.request.Request(url, email)
     with urllib.request.urlopen(request) as response:
-        print(response.read().decode("utf-8"))
+        string = response.read().decode('utf-8')
+        print(string)
