@@ -1,8 +1,7 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """
-Takes URL sends a request to the URL and displays
-the body of response decoded in utf-8).
-uses the packages urllib and sys
+script that takes in a URL, sends a request to the URL and displays
+the body of the response (decoded in utf-8)
 """
 from urllib.request import urlopen
 from urllib.error import HTTPError
